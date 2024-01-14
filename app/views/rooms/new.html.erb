@@ -1,0 +1,14 @@
+<div>
+  <%= render 'headline' %>
+</div>
+
+<%= form_with model: @room do |form| %>
+  <div>
+    <%= form.label :Room_name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

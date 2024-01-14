@@ -1,0 +1,5 @@
+<%= form_with model: [ room, Message.new] do |form| %>
+  Type message:<br>
+  <%= form.text_field :body %>
+  <%= form.submit %>
+<% end %>

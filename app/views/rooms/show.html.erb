@@ -1,0 +1,7 @@
+<div>
+  <%= render 'headline' %>
+  <h5><%= @room.name %></h5>
+</div>
+
+<%= turbo_stream_from @room %>
+<%= render "rooms/messages", room: @room %>

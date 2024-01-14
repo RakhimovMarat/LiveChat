@@ -1,0 +1,10 @@
+<div>
+  <%= render 'headline' %>
+</div>
+<%= link_to "Create new room", new_room_path %>
+
+<h5>Rooms</h5>
+<%= turbo_stream_from "rooms" %>
+<div id="rooms">
+  <%= render @rooms %>
+</div>

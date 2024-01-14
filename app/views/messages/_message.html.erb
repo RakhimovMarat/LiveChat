@@ -1,0 +1,7 @@
+<div id="<%= dom_id(message) %>" class="message-container">
+  <div class="message">
+    <small class="author"><b><%= message.author %>:</b></small>
+    <small class="body"><%= message.body %></small><br>
+    <small class="timestamp"><%= time_tag message.created_at, "data-local": "time-ago" %></small>
+  </div>
+</div>

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class MessagesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_room
@@ -14,5 +16,4 @@ class MessagesController < ApplicationController
   def set_room
     @room = Room.find(params[:room_id])
   end
-
 end

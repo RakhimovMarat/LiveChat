@@ -16,17 +16,17 @@
  
   .room-container {
     height: calc(100vh - 400px);
-    background-color: #b5b8af;
+    border: 1px solid #817f7f;
+    background-color: #d7d8d5;
     overflow-x: hidden;
     overflow-y: scroll;   
   }
 
   .message-container {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -40,6 +40,11 @@
     max-width: 40%;
   }
   
+  .current-user {
+    background-color: #9eeeee; 
+    margin-right: auto;
+  }
+
   .author {
     color: #088d3f;
     margin-bottom: 1px;

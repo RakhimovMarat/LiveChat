@@ -3,5 +3,5 @@
   <h5><%= @room.name %></h5>
 </div>
 
-<%= turbo_stream_from @room %>
+<%= turbo_stream_from @room, :messages %>
 <%= render "rooms/messages", room: @room %>
